@@ -19,12 +19,15 @@
             </intent-filter>
         </activity>
 
-<!--        <receiver
+        <receiver
             android:name=".MyReciever"
             android:enabled="true"
             android:exported="true">
+           <intent-filter>
+               <action android:name="android.intent.action.AIRPLANE_MODE"/>
+           </intent-filter>
 
-        </receiver>-->
+        </receiver>
     </application>
 
 </manifest>
